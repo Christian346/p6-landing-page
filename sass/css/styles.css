@@ -1,1 +1,231 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header header header header' 'uppersec uppersec egg egg ' 'redcup redcup  uppersec2 uppersec2' 'cherry  cherry oranges oranges' 'midsec midsec midsec midsec' 'firstimg secondimg thirdimg fourimg' 'footer footer footer footer';
+}
+
+.main-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  background-color: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(/images/desktop/image-header.jpg);
+}
+
+.main-header .first-h3 {
+  color: white;
+  margin-left: 1em;
+}
+
+.main-header .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -70px;
+}
+
+.main-header .main-nav-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Barlow', serif;
+  list-style: none;
+  margin-bottom: 2em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 1em;
+}
+
+.main-header .main-nav-li li {
+  color: white;
+  margin-left: 1em;
+}
+
+.main-header .top-h1 {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 10em;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.area-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: uppersec;
+}
+
+.area-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: egg;
+  background-color: blue;
+  background-image: url(/images/desktop/image-transform.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.area-3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: redcup;
+  background-image: url(/images/desktop/image-stand-out.jpg);
+  background-size: cover;
+  height: 500px;
+}
+
+.area-4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: uppersec2;
+}
+
+.area-5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: cherry;
+}
+
+.area-6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: oranges;
+}
+
+.rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-1 {
+  display: block;
+  margin: 0 auto;
+  height: 420px;
+  width: auto;
+}
+
+.graphic-d {
+  height: 400px;
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+}
+
+.photography {
+  height: 400px;
+  background-image: url(/images/desktop/image-photography.jpg);
+}
+
+.client-testimonials {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: midsec;
+  text-align: center;
+}
+
+.client-testimonials .client-h {
+  margin-bottom: 2em;
+}
+
+.client-testimonials .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lower-img-1 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: firstimg;
+  background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.lower-img-2 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: secondimg;
+}
+
+.lower-img-3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: thirdimg;
+}
+
+.lower-img-4 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: fourimg;
+}
+
+.img-2 {
+  height: 300px;
+  width: auto;
+}
+
+.main-footer {
+  background-color: #458c7e;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+.main-footer .footer-h3 {
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.main-footer .footer-list {
+  text-align: center;
+  word-spacing: 1em;
+  margin-bottom: 3em;
+}
+
+.main-footer .footer-list li {
+  display: inline;
+}
+
+.main-footer .footer-icons {
+  text-align: center;
+  word-spacing: 1em;
+  margin-bottom: 2em;
+}
+
+.main-footer .footer-icons li {
+  display: inline;
+}
+/*# sourceMappingURL=styles.css.map */

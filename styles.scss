@@ -1,0 +1,214 @@
+//max res 768px
+//colors variables
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow:hsl(51, 100%, 49%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Dark-blue: hsl(198, 62%, 26%);
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    //height: 100vh;
+    //width: 100vw;
+
+
+    font-size:18px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+
+    display:grid;
+    grid-template-areas:
+    'header header header header'
+    'uppersec uppersec egg egg '
+    'redcup redcup  uppersec2 uppersec2'
+    'cherry  cherry oranges oranges'
+    'midsec midsec midsec midsec'
+    'firstimg secondimg thirdimg fourimg'
+    'footer footer footer footer'
+    ;
+
+}
+
+.main-header{
+    grid-area:header;
+    background-color:none;
+    width: 100%;
+    display:flex;
+    background-image: url(/images/desktop/image-header.jpg);
+    
+
+    .first-h3{
+        color:$White;
+        margin-left:1em;
+    }
+    
+    .main-nav{
+      display: flex;
+     background-color: blue;
+     width:100%;
+     flex-direction: column;
+     background-image: url(/images/desktop/image-header.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+     background-position: 0px -70px;
+    }
+
+    .main-nav-li{
+        display: flex;
+        font-family: 'Barlow', serif;
+        list-style: none;
+        margin-bottom: 2em;
+        justify-content: flex-end;
+        margin-right: 1em;
+            
+    }
+    .main-nav-li li{
+        color:$White;
+        margin-left: 1em;
+    }
+    .top-h1{
+        margin:0 auto;
+        margin-top: 1em;
+        margin-bottom: 10em;
+        color:$White;
+        letter-spacing: 3px;
+        
+    }
+
+}
+
+
+
+
+
+    .area-1{
+        grid-area:uppersec;
+        //background-color:red;
+    }
+    .area-2{
+        grid-area:egg;
+        background-color: blue;
+        background-image: url(/images/desktop/image-transform.jpg);
+        background-size: cover;
+        height: 500px;
+    }
+    .area-3{
+        grid-area:redcup;
+        background-image: url(/images/desktop/image-stand-out.jpg);
+        background-size: cover;
+        height: 500px;
+    }
+    .area-4{
+   grid-area:uppersec2;
+    }
+
+    .area-5{
+        grid-area:cherry;
+    }
+    .area-6{
+        grid-area: oranges;
+    }
+    
+    .rows{
+        display: flex;
+    }
+
+
+    .img-1{
+        display: block;
+        margin: 0 auto;
+        height: 420px;
+        width:auto
+    }
+    
+
+  .graphic-d{
+    height: 400px;
+      background-image: url(/images/desktop/image-graphic-design.jpg);
+
+  }
+
+  .photography{ 
+    height: 400px;
+      background-image: url(/images/desktop/image-photography.jpg);
+  }
+
+
+
+
+
+.client-testimonials{
+    grid-area:midsec;
+    text-align: center;
+    .client-h{
+        margin-bottom: 2em;
+    }
+    .people{
+        display: flex;
+    }
+}
+
+//
+    .lower-img-1{
+      grid-area: firstimg;
+      background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+      background-size: cover;
+      height: 300px;
+      width:300px;
+    }
+    .lower-img-2{
+        grid-area: secondimg;
+    }
+    .lower-img-3{
+        grid-area: thirdimg;
+    }
+    .lower-img-4{
+        grid-area: fourimg;
+
+    }
+
+    .img-2{
+        height: 300px;
+      width: auto;
+    }
+//
+
+.main-footer{
+    background-color:$Dark-moderate-cyan;
+    grid-area:footer;
+
+    
+    .footer-h3{
+        margin-top:2em;
+        text-align: center;
+        margin-bottom:2em;
+    }
+    .footer-list{ 
+        text-align: center;
+        word-spacing: 1em;
+        margin-bottom:3em;
+    }
+    .footer-list li{
+        display: inline;
+       
+    }
+    .footer-icons{
+        text-align: center;
+        word-spacing: 1em;
+        margin-bottom:2em;
+
+    }
+    .footer-icons li{
+        display: inline;
+    }
+}
