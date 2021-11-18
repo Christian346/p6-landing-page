@@ -22,7 +22,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(../../images/desktop/image-header.jpg);
 }
 
 .main-header .first-h3 {
@@ -40,7 +40,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(/images/desktop/image-header.jpg);
+  background-image: url(../../images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -70px;
@@ -85,7 +85,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: egg;
   background-color: blue;
-  background-image: url(/images/desktop/image-transform.jpg);
+  background-image: url(../../images/desktop/image-transform.jpg);
   background-size: cover;
   height: 500px;
 }
@@ -95,7 +95,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: redcup;
-  background-image: url(/images/desktop/image-stand-out.jpg);
+  background-image: url(../../images/desktop/image-stand-out.jpg);
   background-size: cover;
   height: 500px;
 }
@@ -136,12 +136,12 @@ body {
 
 .graphic-d {
   height: 400px;
-  background-image: url(/images/desktop/image-graphic-design.jpg);
+  background-image: url(../../images/desktop/image-graphic-design.jpg);
 }
 
 .photography {
   height: 400px;
-  background-image: url(/images/desktop/image-photography.jpg);
+  background-image: url(../../images/desktop/image-photography.jpg);
 }
 
 .client-testimonials {
@@ -166,7 +166,7 @@ body {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: firstimg;
-  background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+  background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
   background-size: cover;
   height: 300px;
   width: 300px;

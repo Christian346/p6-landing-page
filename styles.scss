@@ -44,7 +44,7 @@ body{
     background-color:none;
     width: 100%;
     display:flex;
-    background-image: url(/images/desktop/image-header.jpg);
+    background-image: url(../../images/desktop/image-header.jpg);
     
 
     .first-h3{
@@ -57,7 +57,7 @@ body{
      background-color: blue;
      width:100%;
      flex-direction: column;
-     background-image: url(/images/desktop/image-header.jpg);
+     background-image: url(../../images/desktop/image-header.jpg);
      background-repeat: no-repeat;
      background-size:cover;
      background-position: 0px -70px;
@@ -98,13 +98,13 @@ body{
     .area-2{
         grid-area:egg;
         background-color: blue;
-        background-image: url(/images/desktop/image-transform.jpg);
+        background-image: url(../../images/desktop/image-transform.jpg);
         background-size: cover;
         height: 500px;
     }
     .area-3{
         grid-area:redcup;
-        background-image: url(/images/desktop/image-stand-out.jpg);
+        background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
         height: 500px;
     }
@@ -134,13 +134,13 @@ body{
 
   .graphic-d{
     height: 400px;
-      background-image: url(/images/desktop/image-graphic-design.jpg);
+      background-image: url(../../images/desktop/image-graphic-design.jpg);
 
   }
 
   .photography{ 
     height: 400px;
-      background-image: url(/images/desktop/image-photography.jpg);
+      background-image: url(../../images/desktop/image-photography.jpg);
   }
 
 
@@ -161,7 +161,7 @@ body{
 //
     .lower-img-1{
       grid-area: firstimg;
-      background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+      background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
       background-size: cover;
       height: 300px;
       width:300px;
