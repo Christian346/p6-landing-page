@@ -13,20 +13,25 @@ $Grayish-blue: hsl(210, 4%, 67%);
 $White: hsl(0, 0%, 100%);
 
 *{
-    margin:0;
+     margin:0;
     padding:0;
 }
 
 body{
+  
     //height: 100vh;
     //width: 100vw;
-
-
+    margin: 0 auto;
+    
+     
+    max-width:768px;
     font-size:18px;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
 
     display:grid;
+    
+
     grid-template-areas:
     'header header header header'
     'uppersec uppersec egg egg '
@@ -36,6 +41,8 @@ body{
     'firstimg secondimg thirdimg fourimg'
     'footer footer footer footer'
     ;
+  
+    
 
 }
 
@@ -50,6 +57,7 @@ body{
     .first-h3{
         color:$White;
         margin-left:1em;
+        margin-top:1em;
     }
     
     .main-nav{
@@ -60,7 +68,7 @@ body{
      background-image: url(../../images/desktop/image-header.jpg);
      background-repeat: no-repeat;
      background-size:cover;
-     background-position: 0px -70px;
+     background-position: 0px -30px;
     }
 
     .main-nav-li{
@@ -70,12 +78,28 @@ body{
         margin-bottom: 2em;
         justify-content: flex-end;
         margin-right: 1em;
+        margin-top: 1em;
             
     }
     .main-nav-li li{
         color:$White;
         margin-left: 1em;
+        font-family:'Fraunces', sans-serif; ;
+        
     }
+    .main-nav-li li:hover{
+        background-color:$White;
+        color:black;
+        width:75px;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+
+
+        
+    }
+    
+
     .top-h1{
         margin:0 auto;
         margin-top: 1em;
@@ -93,7 +117,7 @@ body{
 
     .area-1{
         grid-area:uppersec;
-        //background-color:red;
+        background-color:$White;
     }
     .area-2{
         grid-area:egg;
@@ -110,6 +134,7 @@ body{
     }
     .area-4{
    grid-area:uppersec2;
+   background-color:$White;
     }
 
     .area-5{
@@ -128,7 +153,7 @@ body{
         display: block;
         margin: 0 auto;
         height: 420px;
-        width:auto
+        width:auto;
     }
     
 
@@ -149,6 +174,7 @@ body{
 
 .client-testimonials{
     grid-area:midsec;
+    background-color:$White;
     text-align: center;
     .client-h{
         margin-bottom: 2em;
@@ -179,7 +205,7 @@ body{
 
     .img-2{
         height: 300px;
-      width: auto;
+        width: auto;
     }
 //
 
@@ -211,4 +237,8 @@ body{
     .footer-icons li{
         display: inline;
     }
+}
+
+@media screen and (max-width:450px) {
+    //new grid template and resized elements 
 }

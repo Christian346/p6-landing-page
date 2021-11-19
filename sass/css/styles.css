@@ -4,6 +4,8 @@
 }
 
 body {
+  margin: 0 auto;
+  max-width: 768px;
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
   font-family: 'Fraunces', serif;
@@ -28,6 +30,7 @@ body {
 .main-header .first-h3 {
   color: white;
   margin-left: 1em;
+  margin-top: 1em;
 }
 
 .main-header .main-nav {
@@ -43,7 +46,7 @@ body {
   background-image: url(../../images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -70px;
+  background-position: 0px -30px;
 }
 
 .main-header .main-nav-li {
@@ -57,11 +60,22 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 1em;
+  margin-top: 1em;
 }
 
 .main-header .main-nav-li li {
   color: white;
   margin-left: 1em;
+  font-family: 'Fraunces', sans-serif;
+}
+
+.main-header .main-nav-li li:hover {
+  background-color: white;
+  color: black;
+  width: 75px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
 }
 
 .main-header .top-h1 {
@@ -77,6 +91,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: uppersec;
+  background-color: white;
 }
 
 .area-2 {
@@ -105,6 +120,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: uppersec2;
+  background-color: white;
 }
 
 .area-5 {
@@ -149,6 +165,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: midsec;
+  background-color: white;
   text-align: center;
 }
 
