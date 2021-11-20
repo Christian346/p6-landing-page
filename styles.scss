@@ -52,6 +52,7 @@ body{
     width: 100%;
     display:flex;
     background-image: url(../../images/desktop/image-header.jpg);
+   // background-size: cover;
     
 
     .first-h3{
@@ -62,13 +63,13 @@ body{
     
     .main-nav{
       display: flex;
-     background-color: blue;
+     
      width:100%;
      flex-direction: column;
      background-image: url(../../images/desktop/image-header.jpg);
      background-repeat: no-repeat;
      background-size:cover;
-     background-position: 0px -30px;
+     background-position: 0px 0px;
     }
 
     .main-nav-li{
@@ -83,12 +84,13 @@ body{
     }
     .main-nav-li li{
         color:$White;
-        margin-left: 1em;
-        font-family:'Fraunces', sans-serif; ;
+        margin-left: 3em;
+        
         
     }
     .main-nav-li li:hover{
         background-color:$White;
+        font-family:'Fraunces', sans-serif; 
         color:black;
         width:75px;
         padding: 10px;
@@ -106,6 +108,7 @@ body{
         margin-bottom: 10em;
         color:$White;
         letter-spacing: 3px;
+        font-size: 1.9rem;
         
     }
 
@@ -118,13 +121,37 @@ body{
     .area-1{
         grid-area:uppersec;
         background-color:$White;
+        margin-left: 3em;
+  
     }
+    .area-1-header{
+            
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 2em; 
+    }
+    .area-1-para{
+        font-family: "Barlow",'seriff';
+        font-size: 1rem;
+        line-height: 2em;
+        color: $Grayish-blue;
+        margin-top: 3em;
+    }
+    .area-1-a{
+     display: block;
+     margin-top: 3em;
+     text-decoration: none;
+     color: $Very-dark-grayish-blue;
+     font-weight:bold;
+    }
+
     .area-2{
         grid-area:egg;
         background-color: blue;
         background-image: url(../../images/desktop/image-transform.jpg);
         background-size: cover;
         height: 500px;
+        
     }
     .area-3{
         grid-area:redcup;
@@ -135,42 +162,61 @@ body{
     .area-4{
    grid-area:uppersec2;
    background-color:$White;
+   margin-left: 3em;
     }
 
     .area-5{
         grid-area:cherry;
+        
+        
     }
+    .graphic-d{
+        height: 400px;
+          background-image: url(../../images/desktop/image-graphic-design.jpg);
+          background-repeat:no-repeat;
+         background-size:500px;
+          background-position: -15px 0px;
+      }
+
+      .area-5-h{
+          text-align: center;
+          margin-top: 12em;
+      }
+      .area-5-p{
+          display: block;
+          margin:0 auto;
+          width: 300px;
+          margin-top:1em;
+          text-align: center;
+          font-size: 1rem;
+          font-family: "Barlow",'seriff';
+      }
+
     .area-6{
         grid-area: oranges;
     }
-    
-    .rows{
-        display: flex;
-    }
-
-
-    .img-1{
-        display: block;
-        margin: 0 auto;
-        height: 420px;
-        width:auto;
-    }
+    .photography{ 
+        height: 400px;
+          background-image: url(../../images/desktop/image-photography.jpg);
+          background-repeat:no-repeat;
+          background-size:500px;
+          background-position: -15px 0px;
+      }
     
 
-  .graphic-d{
-    height: 400px;
-      background-image: url(../../images/desktop/image-graphic-design.jpg);
 
-  }
-
-  .photography{ 
-    height: 400px;
-      background-image: url(../../images/desktop/image-photography.jpg);
-  }
+    //.rows{
+    //    display: flex;
+    //}
 
 
-
-
+   // .img-1{
+   //     display: block;
+   //     margin: 0 auto;
+   //     height: 420px;
+   //     width:auto;
+   //}
+    
 
 .client-testimonials{
     grid-area:midsec;

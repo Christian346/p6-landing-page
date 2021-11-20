@@ -37,7 +37,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: blue;
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -46,7 +45,7 @@ body {
   background-image: url(../../images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -30px;
+  background-position: 0px 0px;
 }
 
 .main-header .main-nav-li {
@@ -65,12 +64,12 @@ body {
 
 .main-header .main-nav-li li {
   color: white;
-  margin-left: 1em;
-  font-family: 'Fraunces', sans-serif;
+  margin-left: 3em;
 }
 
 .main-header .main-nav-li li:hover {
   background-color: white;
+  font-family: 'Fraunces', sans-serif;
   color: black;
   width: 75px;
   padding: 10px;
@@ -84,6 +83,7 @@ body {
   margin-bottom: 10em;
   color: white;
   letter-spacing: 3px;
+  font-size: 1.9rem;
 }
 
 .area-1 {
@@ -92,6 +92,29 @@ body {
   -ms-grid-column-span: 2;
   grid-area: uppersec;
   background-color: white;
+  margin-left: 3em;
+}
+
+.area-1-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2em;
+}
+
+.area-1-para {
+  font-family: "Barlow",'seriff';
+  font-size: 1rem;
+  line-height: 2em;
+  color: #a7abae;
+  margin-top: 3em;
+}
+
+.area-1-a {
+  display: block;
+  margin-top: 3em;
+  text-decoration: none;
+  color: #5a636c;
+  font-weight: bold;
 }
 
 .area-2 {
@@ -121,6 +144,7 @@ body {
   -ms-grid-column-span: 2;
   grid-area: uppersec2;
   background-color: white;
+  margin-left: 3em;
 }
 
 .area-5 {
@@ -130,6 +154,29 @@ body {
   grid-area: cherry;
 }
 
+.graphic-d {
+  height: 400px;
+  background-image: url(../../images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: -15px 0px;
+}
+
+.area-5-h {
+  text-align: center;
+  margin-top: 12em;
+}
+
+.area-5-p {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Barlow",'seriff';
+}
+
 .area-6 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
@@ -137,27 +184,12 @@ body {
   grid-area: oranges;
 }
 
-.rows {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.img-1 {
-  display: block;
-  margin: 0 auto;
-  height: 420px;
-  width: auto;
-}
-
-.graphic-d {
-  height: 400px;
-  background-image: url(../../images/desktop/image-graphic-design.jpg);
-}
-
 .photography {
   height: 400px;
   background-image: url(../../images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: -15px 0px;
 }
 
 .client-testimonials {
