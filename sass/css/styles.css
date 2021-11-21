@@ -25,9 +25,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-image: url(../../images/desktop/image-header.jpg);
+  background-size: cover;
+  background-position: 20px 0px;
 }
 
 .main-header .first-h3 {
+  background-color: none;
+  height: 50px;
   color: white;
   margin-left: 1em;
   margin-top: 1em;
@@ -42,10 +46,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../../images/desktop/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px 0px;
+  background-position: -80px 0px;
 }
 
 .main-header .main-nav-li {
@@ -60,6 +63,7 @@ body {
           justify-content: flex-end;
   margin-right: 1em;
   margin-top: 1em;
+  font-size: 1rem;
 }
 
 .main-header .main-nav-li li {
@@ -78,12 +82,23 @@ body {
 }
 
 .main-header .top-h1 {
-  margin: 0 auto;
+  margin-left: 5em;
   margin-top: 1em;
   margin-bottom: 10em;
   color: white;
   letter-spacing: 3px;
-  font-size: 1.9rem;
+  font-size: 2.25rem;
+}
+
+.main-header .arrow-down {
+  width: 20px;
+  position: relative;
+  top: 4em;
+  right: 6.3em;
+}
+
+.main-header .menu-btn {
+  display: none;
 }
 
 .area-1 {
@@ -124,6 +139,7 @@ body {
   grid-area: egg;
   background-color: blue;
   background-image: url(../../images/desktop/image-transform.jpg);
+  background-position: -50px 0px;
   background-size: cover;
   height: 500px;
 }
@@ -135,6 +151,7 @@ body {
   grid-area: redcup;
   background-image: url(../../images/desktop/image-stand-out.jpg);
   background-size: cover;
+  background-position: -50px 0px;
   height: 500px;
 }
 
@@ -175,6 +192,7 @@ body {
   text-align: center;
   font-size: 1rem;
   font-family: "Barlow",'seriff';
+  color: #5a636c;
 }
 
 .area-6 {
@@ -202,6 +220,21 @@ body {
 }
 
 .client-testimonials .client-h {
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.client-testimonials .img-people {
+  width: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
   margin-bottom: 2em;
 }
 
@@ -209,6 +242,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.client-testimonials .people .para {
+  color: #818498;
+  font-family: "Barlow", "Seriff";
+  margin-bottom: 4em;
+}
+
+.client-testimonials .user {
+  margin-bottom: 0.5em;
+}
+
+.client-testimonials .position {
+  color: #818498;
+  margin-bottom: 8em;
+  font-family: "Barlow", "Seriff";
+  font-size: 0.9rem;
 }
 
 .lower-img-1 {
@@ -253,15 +303,21 @@ body {
 }
 
 .main-footer .footer-h3 {
-  margin-top: 2em;
+  font-family: "Barlow", "Seriff";
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 1.6em;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  color: #25564b;
 }
 
 .main-footer .footer-list {
   text-align: center;
   word-spacing: 1em;
   margin-bottom: 3em;
+  font-family: "Barlow", "Seriff";
+  color: #25564b;
 }
 
 .main-footer .footer-list li {
@@ -276,5 +332,213 @@ body {
 
 .main-footer .footer-icons li {
   display: inline;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+        grid-template-areas: 'header header' 'egg  egg' 'uppersec uppersec' 'redcup redcup' 'uppersec2 uppersec2' 'cherry cherry' 'oranges oranges' 'midsec midsec' 'firstimg secondimg' 'thirdimg fourimg' 'footer footer';
+  }
+  .main-header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(../../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 220% 100%;
+    background-position: -455px 00px;
+  }
+  .main-header .first-h3 {
+    margin-left: 1em;
+    margin-top: 1em;
+  }
+  .main-header .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-header .main-nav-li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1rem;
+    margin-top: 3em;
+    margin-right: 3em;
+    background-color: white;
+    height: 40vh;
+  }
+  .main-header .main-nav-li li {
+    color: #a7abae;
+    margin-left: 3em;
+  }
+  .main-header .main-nav-li li:hover {
+    background-color: white;
+    font-family: 'Fraunces', sans-serif;
+    color: black;
+    width: 75px;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+  }
+  .main-header .top-h1 {
+    margin-right: 8em;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .main-header .arrow-down {
+    width: 40px;
+    top: 1.5em;
+    right: 0.1em;
+  }
+  .main-header .menu-pos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .main-header .menu-btn {
+    width: 30px;
+    display: block;
+    color: white;
+    margin-top: 1em;
+    margin-right: 1.5em;
+    font-size: 2rem;
+  }
+  .area-1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: uppersec;
+  }
+  .area-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: egg;
+    background-color: blue;
+    background-image: url(../../images/desktop/image-transform.jpg);
+    background-position: -50px 0px;
+    background-size: cover;
+    height: 500px;
+  }
+  .area-3 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: redcup;
+    background-image: url(../../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: -50px 0px;
+    height: 500px;
+  }
+  .area-4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: uppersec2;
+  }
+  .area-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cherry;
+  }
+  .area-6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: oranges;
+  }
+  .client-testimonials {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: midsec;
+    text-align: center;
+  }
+  .client-testimonials .client-h {
+    margin-top: 6em;
+    margin-bottom: 3em;
+  }
+  .client-testimonials .img-people {
+    width: 60px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .client-testimonials .people {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .client-testimonials .people .para {
+    color: #818498;
+    font-family: "Barlow", "Seriff";
+    margin-bottom: 4em;
+  }
+  .client-testimonials .user {
+    margin-bottom: 0.5em;
+  }
+  .client-testimonials .position {
+    color: #818498;
+    margin-bottom: 8em;
+    font-family: "Barlow", "Seriff";
+    font-size: 0.9rem;
+  }
+  .lower-img-1 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: firstimg;
+    background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+  }
+  .lower-img-2 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: secondimg;
+  }
+  .lower-img-3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: thirdimg;
+  }
+  .lower-img-4 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+    grid-area: fourimg;
+  }
+  .main-footer {
+    background-color: #458c7e;
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -46,16 +46,20 @@ body{
 
 }
 
+
 .main-header{
     grid-area:header;
     background-color:none;
+   
     width: 100%;
     display:flex;
     background-image: url(../../images/desktop/image-header.jpg);
-   // background-size: cover;
-    
+    background-size: cover;
+    background-position: 20px 0px;
 
     .first-h3{
+        background-color:none;
+        height: 50px;
         color:$White;
         margin-left:1em;
         margin-top:1em;
@@ -66,10 +70,10 @@ body{
      
      width:100%;
      flex-direction: column;
-     background-image: url(../../images/desktop/image-header.jpg);
+    
      background-repeat: no-repeat;
      background-size:cover;
-     background-position: 0px 0px;
+     background-position: -80px 0px;
     }
 
     .main-nav-li{
@@ -80,13 +84,13 @@ body{
         justify-content: flex-end;
         margin-right: 1em;
         margin-top: 1em;
+        font-size: 1rem;
             
     }
     .main-nav-li li{
         color:$White;
         margin-left: 3em;
-        
-        
+ 
     }
     .main-nav-li li:hover{
         background-color:$White;
@@ -100,20 +104,34 @@ body{
 
         
     }
-    
+
 
     .top-h1{
-        margin:0 auto;
+        //margin:0 auto;
+        margin-left: 5em;
         margin-top: 1em;
         margin-bottom: 10em;
         color:$White;
         letter-spacing: 3px;
-        font-size: 1.9rem;
+        font-size: 2.25rem;
         
     }
+   
+    
+    .arrow-down{
+        width:20px;
+        position: relative;
+        top:4em;
+        right:6.3em;
+        
+    }
+    
+    .menu-btn{
+        display:none;
+     }
+     
 
 }
-
 
 
 
@@ -149,6 +167,7 @@ body{
         grid-area:egg;
         background-color: blue;
         background-image: url(../../images/desktop/image-transform.jpg);
+        background-position: -50px 0px;
         background-size: cover;
         height: 500px;
         
@@ -157,6 +176,7 @@ body{
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
+        background-position: -50px 0px;
         height: 500px;
     }
     .area-4{
@@ -190,6 +210,7 @@ body{
           text-align: center;
           font-size: 1rem;
           font-family: "Barlow",'seriff';
+          color:$Very-dark-grayish-blue
       }
 
     .area-6{
@@ -201,32 +222,48 @@ body{
           background-repeat:no-repeat;
           background-size:500px;
           background-position: -15px 0px;
+         
       }
     
 
 
-    //.rows{
-    //    display: flex;
-    //}
-
-
-   // .img-1{
-   //     display: block;
-   //     margin: 0 auto;
-   //     height: 420px;
-   //     width:auto;
-   //}
     
-
 .client-testimonials{
     grid-area:midsec;
     background-color:$White;
     text-align: center;
     .client-h{
+        margin-top: 6em;
+        margin-bottom: 3em;
+    }
+    .img-people{
+
+        width:60px;
+        border-radius:50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         margin-bottom: 2em;
+
     }
     .people{
         display: flex;
+    }
+    .people .para {
+       
+        color:$Dark-grayish-blue;
+        font-family: "Barlow", "Seriff";
+        margin-bottom:4em ;
+    }
+    .user{
+        margin-bottom: 0.5em;
+
+    }
+    .position{
+        color:$Dark-grayish-blue;
+        margin-bottom: 8em;
+        font-family: "Barlow", "Seriff";
+        font-size: 0.9rem;
     }
 }
 
@@ -261,18 +298,24 @@ body{
 
     
     .footer-h3{
-        margin-top:2em;
+        font-family:"Barlow", "Seriff";
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-top:1.6em;
         text-align: center;
-        margin-bottom:2em;
+        margin-bottom:1em;
+        color:$Dark-desaturated-cyan;
     }
     .footer-list{ 
         text-align: center;
         word-spacing: 1em;
         margin-bottom:3em;
+        font-family:"Barlow", "Seriff";
+        color:$Dark-desaturated-cyan;
     }
     .footer-list li{
         display: inline;
-       
+         
     }
     .footer-icons{
         text-align: center;
@@ -287,4 +330,213 @@ body{
 
 @media screen and (max-width:450px) {
     //new grid template and resized elements 
+
+    body{
+        grid-template-areas:
+    'header header'
+    'egg  egg'
+    'uppersec uppersec'
+    'redcup redcup'
+    'uppersec2 uppersec2'
+    'cherry cherry'
+    'oranges oranges'
+    'midsec midsec'
+    'firstimg secondimg'
+    'thirdimg fourimg'
+    'footer footer'
+    ;
+
+    }
+
+.main-header{
+    grid-area:header;
+   
+   
+    width: 100%;
+    display:flex;
+    background-image: url(../../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 220% 100%;
+    background-position: -455px 00px;
+
+    .first-h3{
+       
+        margin-left:1em;
+        margin-top:1em;
+    }
+    
+    .main-nav{
+      display: flex;
+     
+     width:100%;
+     flex-direction: column;
+    
+    }
+
+    
+
+    .main-nav-li{
+        
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1rem;   
+        margin-top: 3em;
+        margin-right: 3em;
+        background-color: white ;
+        height: 40vh; 
+    }
+    
+
+    .main-nav-li li{
+        color:$Grayish-blue;
+        margin-left: 3em;
+    }
+    
+    .main-nav-li li:hover{
+     
+        background-color:$White;
+        font-family:'Fraunces', sans-serif; 
+        color:black;
+        width:75px;
+        padding: 10px;
+        border-radius: 30px;
+        text-align: center;
+
+ 
+    }
+
+
+    .top-h1{
+        //margin:0 auto;
+        margin-right: 8em;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+   
+    
+    .arrow-down{
+        width:40px;
+        top:1.5em;
+        right:0.1em;
+        
+    }
+    //button menu for small devices
+     .menu-pos{
+         display:flex;
+        justify-content: flex-end;
+
+     }
+    .menu-btn{
+        width:30px;
+        display:block;
+        color:white;
+        margin-top: 1em;
+        margin-right: 1.5em;
+        font-size: 2rem;
+    }
+    
+}
+   
+    //start of areas below header
+
+    .area-1{
+        grid-area:uppersec;
+    
+    }
+    .area-2{
+        grid-area:egg;
+        background-color: blue;
+        background-image: url(../../images/desktop/image-transform.jpg);
+        background-position: -50px 0px;
+        background-size: cover;
+        height: 500px;
+        
+    }
+    .area-3{
+        grid-area:redcup;
+        background-image: url(../../images/desktop/image-stand-out.jpg);
+        background-size: cover;
+        background-position: -50px 0px;
+        height: 500px;
+    }
+    .area-4{
+   grid-area:uppersec2;
+ 
+    }
+
+    .area-5{
+        grid-area:cherry;
+        
+    }
+    .area-6{
+        grid-area: oranges;
+    }
+
+
+    .client-testimonials{
+        grid-area:midsec;
+      
+        text-align: center;
+
+        .client-h{
+            margin-top: 6em;
+            margin-bottom: 3em;
+        }
+        .img-people{
+    
+            width:60px;
+            border-radius:50%;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-bottom: 2em;
+    
+        }
+        .people{
+            display: flex;
+        }
+        .people .para {
+           
+            color:$Dark-grayish-blue;
+            font-family: "Barlow", "Seriff";
+            margin-bottom:4em ;
+        }
+        .user{
+            margin-bottom: 0.5em;
+    
+        }
+        .position{
+            color:$Dark-grayish-blue;
+            margin-bottom: 8em;
+            font-family: "Barlow", "Seriff";
+            font-size: 0.9rem;
+        }
+    }
+    
+
+
+
+    .lower-img-1{
+        grid-area: firstimg;
+        background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+        background-size: cover;
+        height: 300px;
+        width:300px;
+      }
+      .lower-img-2{
+          grid-area: secondimg;
+      }
+      .lower-img-3{
+          grid-area: thirdimg;
+      }
+      .lower-img-4{
+          grid-area: fourimg;
+  
+      }
+      .main-footer{
+        background-color:$Dark-moderate-cyan;
+        grid-area:footer;
+      }
 }
