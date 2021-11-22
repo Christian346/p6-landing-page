@@ -15,6 +15,7 @@ $White: hsl(0, 0%, 100%);
 *{
      margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -58,7 +59,7 @@ body{
     background-position: 20px 0px;
 
     .first-h3{
-        background-color:none;
+       font-family: 'Barlow', Serif;
         height: 50px;
         color:$White;
         margin-left:1em;
@@ -232,6 +233,9 @@ body{
     grid-area:midsec;
     background-color:$White;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
     .client-h{
         margin-top: 6em;
         margin-bottom: 3em;
@@ -332,6 +336,7 @@ body{
     //new grid template and resized elements 
 
     body{
+        
         grid-template-areas:
     'header header'
     'egg  egg'
@@ -350,57 +355,62 @@ body{
 
 .main-header{
     grid-area:header;
-   
-   
-    width: 100%;
-    display:flex;
-    background-image: url(../../images/desktop/image-header.jpg);
+    height: 670px;
+   // width: 100vw;
+    background-size: 195% 100%;
+    background-position: -245px 0px;
     background-repeat: no-repeat;
-    background-size: 220% 100%;
-    background-position: -455px 00px;
 
     .first-h3{
-       
-        margin-left:1em;
-        margin-top:1em;
+        font-size: 2rem;
+        font-weight:800;
     }
     
     .main-nav{
-      display: flex;
-     
-     width:100%;
-     flex-direction: column;
-    
+      display: flex; 
+      width:100%;
+      flex-direction: column;
     }
 
     
 
     .main-nav-li{
         
+       //display when clicked has to placed there
+        //visibility: hidden;
+
         flex-direction: column;
-        justify-content: space-around;
+        justify-content:space-evenly;
         align-items: center;
-        font-size: 1rem;   
-        margin-top: 3em;
-        margin-right: 3em;
-        background-color: white ;
-        height: 40vh; 
+        font-size: 2rem;   
+        margin-top: 2.5em;
+        margin-left:-3.75em;
+        background-color:$White;
+        height: 400px; 
+        width:122.3%;
+        position: relative;// needs it for element not to crash with each other
+        z-index: 1;
+      
     }
+   
     
 
     .main-nav-li li{
         color:$Grayish-blue;
-        margin-left: 3em;
+        margin:0 auto;
+        padding:0.7em;
+        //background-color: hotpink;
+        
     }
     
     .main-nav-li li:hover{
      
-        background-color:$White;
+        background-color:$Yellow;
         font-family:'Fraunces', sans-serif; 
         color:black;
-        width:75px;
-        padding: 10px;
-        border-radius: 30px;
+        width:180px;
+        padding: 20px;
+        border-radius: 35px;
         text-align: center;
 
  
@@ -408,18 +418,23 @@ body{
 
 
     .top-h1{
-        //margin:0 auto;
-        margin-right: 8em;
+        
+        margin:0 auto;
+        margin-top: -14em;
+        margin-left:-4em;
         font-size: 2rem;
         text-align: center;
+        line-height:50px;
+        letter-spacing: 15px;
         
     }
    
     
     .arrow-down{
         width:40px;
-        top:1.5em;
-        right:0.1em;
+        margin: 0 auto;
+        top:3em;
+        right:5em;
         
     }
     //button menu for small devices
@@ -429,13 +444,24 @@ body{
 
      }
     .menu-btn{
-        width:30px;
+        width:42px;
         display:block;
-        color:white;
-        margin-top: 1em;
-        margin-right: 1.5em;
-        font-size: 2rem;
+        margin-top: 0.9em;
+        margin-right: 0.1em;
+        font-size: 3rem;
     }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-bottom: 47px solid $White;
+        border-left: 47px solid transparent;
+        position: relative;
+        top:6em;
+        right:2.61em;
+        //make it invisible
+       // visibility: hidden;
+      
+      }
     
 }
    
@@ -443,8 +469,35 @@ body{
 
     .area-1{
         grid-area:uppersec;
+        margin: 0 auto;
     
     }
+    .area-1-header{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: 2em; 
+    }
+    .area-1-para{
+        font-family: "Barlow",'seriff';
+        font-size: 1.3rem;
+        margin:1em;
+        line-height: 1.5em;
+        color: $Grayish-blue;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    .area-1-a{
+     display: block;
+     text-align: center;
+     margin-top: 2em;
+     margin-bottom: 4em;
+     text-decoration: none;
+     color: $Very-dark-grayish-blue;
+     font-weight:bold;
+     
+    }
+
     .area-2{
         grid-area:egg;
         background-color: blue;
@@ -458,20 +511,45 @@ body{
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
-        background-position: -50px 0px;
+        background-position: -35px 0px;
         height: 500px;
     }
     .area-4{
-   grid-area:uppersec2;
- 
+      grid-area:uppersec2;
+      margin: 0 auto;
     }
+    .area-5-h{
+        font-size:2rem;
+        text-align: center;
+        margin-top: 15em;
+    }
+    .area-5-p{ 
+        width: 500px;
+        font-size: 1.35rem;  
+    }
+
+    .graphic-d{
+        height: 400px;
+         background-size:cover;
+         background-position: -150px 0px;
+      }
 
     .area-5{
         grid-area:cherry;
+        height: 700px;
         
     }
+    .photography{ 
+        height: 400px;
+          background-image: url(../../images/desktop/image-photography.jpg);
+          background-repeat:no-repeat;
+          background-size:cover;
+          background-position: -150px 0px;
+         
+      }
     .area-6{
         grid-area: oranges;
+        height: 700px;
     }
 
 
@@ -481,8 +559,9 @@ body{
         text-align: center;
 
         .client-h{
-            margin-top: 6em;
-            margin-bottom: 3em;
+            word-spacing: 0.9em;
+            letter-spacing: 0.4em;
+            color: $Very-dark-grayish-blue;
         }
         .img-people{
     
@@ -494,24 +573,23 @@ body{
             margin-bottom: 2em;
     
         }
+
         .people{
-            display: flex;
+            flex-direction: column;
         }
         .people .para {
-           
-            color:$Dark-grayish-blue;
-            font-family: "Barlow", "Seriff";
-            margin-bottom:4em ;
+            margin: 0 auto;
+            width:80%;
+             font-size:1.6rem;
+             margin-bottom:2em ;
+             line-height: 1.5em;    
         }
         .user{
-            margin-bottom: 0.5em;
-    
+            font-size: 1.5rem;
         }
         .position{
-            color:$Dark-grayish-blue;
-            margin-bottom: 8em;
-            font-family: "Barlow", "Seriff";
-            font-size: 0.9rem;
+            margin-bottom: 3em;  
+            font-size: 1.2rem;
         }
     }
     
@@ -535,8 +613,47 @@ body{
           grid-area: fourimg;
   
       }
-      .main-footer{
+      
+      .img-2{
+        height: 311px;
+        width: auto;
+    }
+
+    .main-footer{
         background-color:$Dark-moderate-cyan;
         grid-area:footer;
-      }
+    
+        
+        .footer-h3{
+            font-family:"Barlow", "Seriff";
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-top:1.6em;
+            text-align: center;
+            margin-bottom:1em;
+            color:$Dark-desaturated-cyan;
+        }
+        .footer-list{ 
+            text-align: center;
+            word-spacing: 5em;
+            margin-bottom:4em;
+            font-family:"Barlow", "Seriff";
+            color:$Dark-desaturated-cyan;
+        }
+        .footer-list li{
+            display: inline;   
+        }
+        .footer-icons{
+            text-align: center;
+            word-spacing: 1em;
+            margin-bottom: 4em;
+    
+        }
+        .footer-icons li{
+            display: inline;
+        
+        }
+
+
+    }
 }
