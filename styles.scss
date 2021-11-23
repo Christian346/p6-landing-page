@@ -19,20 +19,20 @@ $White: hsl(0, 0%, 100%);
 }
 
 body{
-  
     //height: 100vh;
-    //width: 100vw;
-    margin: 0 auto;
-    
-     
-    max-width:768px;
+    //width: 100%;
     font-size:18px;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
-
+ 
+}
+.container{
+  margin:0 auto;
+ 
+   max-width: 780px;
+    background-color:none;
     display:grid;
     
-
     grid-template-areas:
     'header header header header'
     'uppersec uppersec egg egg '
@@ -42,21 +42,17 @@ body{
     'firstimg secondimg thirdimg fourimg'
     'footer footer footer footer'
     ;
-  
-    
 
 }
 
 
 .main-header{
     grid-area:header;
-    background-color:none;
-   
     width: 100%;
     display:flex;
     background-image: url(../../images/desktop/image-header.jpg);
     background-size: cover;
-    background-position: 20px 0px;
+    background-position: -40px 0px;
 
     .first-h3{
        font-family: 'Barlow', Serif;
@@ -68,13 +64,11 @@ body{
     
     .main-nav{
       display: flex;
-     
-     width:100%;
-     flex-direction: column;
-    
-     background-repeat: no-repeat;
-     background-size:cover;
-     background-position: -80px 0px;
+      width:100%;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position: -80px 0px;
     }
 
     .main-nav-li{
@@ -85,69 +79,56 @@ body{
         justify-content: flex-end;
         margin-right: 1em;
         margin-top: 1em;
-        font-size: 1rem;
-            
+        font-size: 1rem;      
     }
+
     .main-nav-li li{
         color:$White;
         margin-left: 3em;
- 
     }
+
     .main-nav-li li:hover{
         background-color:$White;
         font-family:'Fraunces', sans-serif; 
         color:black;
-        width:75px;
+        width:85px;
         padding: 10px;
         border-radius: 30px;
-        text-align: center;
-
-
-        
+        text-align: center; 
     }
 
-
     .top-h1{
-        //margin:0 auto;
         margin-left: 5em;
         margin-top: 1em;
         margin-bottom: 10em;
         color:$White;
         letter-spacing: 3px;
-        font-size: 2.25rem;
-        
+        font-size: 2.25rem;  
     }
    
-    
     .arrow-down{
-        width:20px;
+        width:30px;
         position: relative;
-        top:4em;
-        right:6.3em;
-        
+        top:-14em;
+        right:-21em;   
     }
     
     .menu-btn{
         display:none;
      }
-     
-
 }
-
-
-
 
     .area-1{
         grid-area:uppersec;
         background-color:$White;
-        margin-left: 3em;
+        
   
     }
-    .area-1-header{
-            
+    .area-1-header{      
         font-size: 2.5rem;
         font-weight: bold;
         margin-top: 2em; 
+        margin-left: 1em;
     }
     .area-1-para{
         font-family: "Barlow",'seriff';
@@ -155,6 +136,7 @@ body{
         line-height: 2em;
         color: $Grayish-blue;
         margin-top: 3em;
+        margin-left: 3em;
     }
     .area-1-a{
      display: block;
@@ -162,6 +144,7 @@ body{
      text-decoration: none;
      color: $Very-dark-grayish-blue;
      font-weight:bold;
+     margin-left: 3em;
     }
 
     .area-2{
@@ -170,9 +153,9 @@ body{
         background-image: url(../../images/desktop/image-transform.jpg);
         background-position: -50px 0px;
         background-size: cover;
-        height: 500px;
-        
+        height: 500px;   
     }
+
     .area-3{
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
@@ -180,23 +163,22 @@ body{
         background-position: -50px 0px;
         height: 500px;
     }
+
     .area-4{
    grid-area:uppersec2;
    background-color:$White;
-   margin-left: 3em;
+ 
     }
 
     .area-5{
-        grid-area:cherry;
-        
-        
+        grid-area:cherry; 
     }
     .graphic-d{
         height: 400px;
-          background-image: url(../../images/desktop/image-graphic-design.jpg);
-          background-repeat:no-repeat;
-         background-size:500px;
-          background-position: -15px 0px;
+        background-image: url(../../images/desktop/image-graphic-design.jpg);
+        background-repeat:no-repeat;
+        background-size:500px;
+        background-position: -15px 0px;
       }
 
       .area-5-h{
@@ -222,14 +204,10 @@ body{
           background-image: url(../../images/desktop/image-photography.jpg);
           background-repeat:no-repeat;
           background-size:500px;
-          background-position: -15px 0px;
-         
+          background-position: -15px 0px; 
       }
     
-
-
-    
-.client-testimonials{
+    .client-testimonials{
     grid-area:midsec;
     background-color:$White;
     text-align: center;
@@ -241,28 +219,28 @@ body{
         margin-bottom: 3em;
     }
     .img-people{
-
         width:60px;
         border-radius:50%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
         margin-bottom: 2em;
-
     }
+
     .people{
         display: flex;
     }
+
     .people .para {
-       
         color:$Dark-grayish-blue;
         font-family: "Barlow", "Seriff";
         margin-bottom:4em ;
     }
+
     .user{
         margin-bottom: 0.5em;
-
     }
+
     .position{
         color:$Dark-grayish-blue;
         margin-bottom: 8em;
@@ -277,17 +255,19 @@ body{
       background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
       background-size: cover;
       height: 300px;
-      width:300px;
+     // width:300px;
     }
+
     .lower-img-2{
         grid-area: secondimg;
     }
+
     .lower-img-3{
         grid-area: thirdimg;
     }
+
     .lower-img-4{
         grid-area: fourimg;
-
     }
 
     .img-2{
@@ -300,7 +280,6 @@ body{
     background-color:$Dark-moderate-cyan;
     grid-area:footer;
 
-    
     .footer-h3{
         font-family:"Barlow", "Seriff";
         font-size: 1.8rem;
@@ -310,6 +289,7 @@ body{
         margin-bottom:1em;
         color:$Dark-desaturated-cyan;
     }
+
     .footer-list{ 
         text-align: center;
         word-spacing: 1em;
@@ -317,38 +297,44 @@ body{
         font-family:"Barlow", "Seriff";
         color:$Dark-desaturated-cyan;
     }
+
     .footer-list li{
-        display: inline;
-         
+        display: inline;  
     }
+
     .footer-icons{
         text-align: center;
         word-spacing: 1em;
         margin-bottom:2em;
-
     }
+
     .footer-icons li{
         display: inline;
     }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:376px) {
     //new grid template and resized elements 
 
     body{
+        margin:0;
+        background-color: red;
+       
+    }
+    .container{
         
         grid-template-areas:
-    'header header'
-    'egg  egg'
-    'uppersec uppersec'
-    'redcup redcup'
-    'uppersec2 uppersec2'
-    'cherry cherry'
-    'oranges oranges'
-    'midsec midsec'
-    'firstimg secondimg'
-    'thirdimg fourimg'
-    'footer footer'
+        'header header'
+        'egg  egg'
+        'uppersec uppersec'
+        'redcup redcup'
+        'uppersec2 uppersec2'
+        'cherry cherry'
+        'oranges oranges'
+        'midsec midsec'
+        'firstimg secondimg'
+        'thirdimg fourimg'
+        'footer footer'
     ;
 
     }
@@ -356,9 +342,9 @@ body{
 .main-header{
     grid-area:header;
     height: 670px;
-   // width: 100vw;
-    background-size: 195% 100%;
-    background-position: -245px 0px;
+    width: 103vw;
+    background-size: 200% 100%;
+    background-position: -200px 0px;
     background-repeat: no-repeat;
 
     .first-h3{
@@ -372,22 +358,33 @@ body{
       flex-direction: column;
     }
 
-    
+    .triangle{
+        width: 0;
+        height: 0;
+        border-bottom: 47px solid $White;
+        border-left: 47px solid transparent;
+        position: relative;
+        top:6em;
+        right:2.61em;
+        //make it invisible
+       // visibility: hidden;
+      
+      }
 
     .main-nav-li{
         
        //display when clicked has to placed there
-        //visibility: hidden;
+       //visibility: hidden;
 
         flex-direction: column;
         justify-content:space-evenly;
         align-items: center;
         font-size: 2rem;   
         margin-top: 2.5em;
-        margin-left:-3.75em;
+        margin-left:-4.5em;
         background-color:$White;
         height: 400px; 
-        width:122.3%;
+        width:146%;
         position: relative;// needs it for element not to crash with each other
         z-index: 1;
       
@@ -421,11 +418,11 @@ body{
         
         margin:0 auto;
         margin-top: -14em;
-        margin-left:-4em;
+        margin-left:-6em;
         font-size: 2rem;
         text-align: center;
         line-height:50px;
-        letter-spacing: 15px;
+        letter-spacing: 10px;
         
     }
    
@@ -444,49 +441,42 @@ body{
 
      }
     .menu-btn{
-        width:42px;
+        width:35px;
         display:block;
         margin-top: 0.9em;
-        margin-right: 0.1em;
+       // margin-right:-0.3em;
         font-size: 3rem;
     }
-    .triangle{
-        width: 0;
-        height: 0;
-        border-bottom: 47px solid $White;
-        border-left: 47px solid transparent;
-        position: relative;
-        top:6em;
-        right:2.61em;
-        //make it invisible
-       // visibility: hidden;
-      
-      }
     
-}
-   
+    
+} 
     //start of areas below header
-
     .area-1{
         grid-area:uppersec;
         margin: 0 auto;
-    
+        margin-left: 0em;
+        width: 103vw;
     }
+
     .area-1-header{
+        
         text-align: center;
         font-size: 2.5rem;
         font-weight: bold;
         margin-top: 2em; 
+        margin-left: 0em;
     }
+
     .area-1-para{
         font-family: "Barlow",'seriff';
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin:1em;
         line-height: 1.5em;
         color: $Grayish-blue;
         margin-top: 1.5em;
         text-align: center;
     }
+
     .area-1-a{
      display: block;
      text-align: center;
@@ -495,67 +485,74 @@ body{
      text-decoration: none;
      color: $Very-dark-grayish-blue;
      font-weight:bold;
-     
+     margin-left: 0em;
     }
 
     .area-2{
+        width: 103vw;
         grid-area:egg;
         background-color: blue;
         background-image: url(../../images/desktop/image-transform.jpg);
-        background-position: -50px 0px;
+        background-position: -100px 0px;
         background-size: cover;
-        height: 500px;
-        
+        height: 500px; 
     }
     .area-3{
+        width: 103vw;
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
-        background-position: -35px 0px;
+        background-position: -100px 0px;
         height: 500px;
     }
+
     .area-4{
+        width: 103vw;
       grid-area:uppersec2;
       margin: 0 auto;
+      margin-left: 0em;
     }
+
     .area-5-h{
         font-size:2rem;
         text-align: center;
         margin-top: 15em;
     }
+
     .area-5-p{ 
-        width: 500px;
-        font-size: 1.35rem;  
+        width: 300px;
+        font-size: 1rem;  
     }
 
     .graphic-d{
         height: 400px;
          background-size:cover;
-         background-position: -150px 0px;
+         background-position: -200px 0px;
       }
 
     .area-5{
+        width: 103vw;
         grid-area:cherry;
-        height: 700px;
-        
+        height: 700px;  
     }
+
     .photography{ 
         height: 400px;
           background-image: url(../../images/desktop/image-photography.jpg);
           background-repeat:no-repeat;
           background-size:cover;
-          background-position: -150px 0px;
-         
+          background-position: -220px 0px; 
       }
+
     .area-6{
+        width: 103vw;
         grid-area: oranges;
         height: 700px;
     }
 
-
     .client-testimonials{
+        width: 103vw;
         grid-area:midsec;
-      
         text-align: center;
 
         .client-h{
@@ -563,20 +560,20 @@ body{
             letter-spacing: 0.4em;
             color: $Very-dark-grayish-blue;
         }
+
         .img-people{
-    
             width:60px;
             border-radius:50%;
             display: flex;
             flex-direction: column;
             margin: 0 auto;
             margin-bottom: 2em;
-    
         }
 
         .people{
             flex-direction: column;
         }
+
         .people .para {
             margin: 0 auto;
             width:80%;
@@ -584,46 +581,47 @@ body{
              margin-bottom:2em ;
              line-height: 1.5em;    
         }
+
         .user{
             font-size: 1.5rem;
         }
+
         .position{
             margin-bottom: 3em;  
             font-size: 1.2rem;
         }
+
     }
     
 
-
-
     .lower-img-1{
+        width: 23vw;
         grid-area: firstimg;
-        background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
-        background-size: cover;
-        height: 300px;
-        width:300px;
+        
       }
       .lower-img-2{
+        width: 23vw;
           grid-area: secondimg;
       }
       .lower-img-3{
+        width: 23vw;
           grid-area: thirdimg;
       }
       .lower-img-4{
+        width: 2vw;
           grid-area: fourimg;
-  
       }
       
       .img-2{
-        height: 311px;
-        width: auto;
+        height:auto;
+        width: 100%;
     }
 
     .main-footer{
+        width: 103vw;
         background-color:$Dark-moderate-cyan;
         grid-area:footer;
     
-        
         .footer-h3{
             font-family:"Barlow", "Seriff";
             font-size: 1.8rem;
@@ -633,27 +631,26 @@ body{
             margin-bottom:1em;
             color:$Dark-desaturated-cyan;
         }
+
         .footer-list{ 
             text-align: center;
-            word-spacing: 5em;
+            word-spacing: 2em;
             margin-bottom:4em;
             font-family:"Barlow", "Seriff";
             color:$Dark-desaturated-cyan;
         }
+
         .footer-list li{
             display: inline;   
         }
+
         .footer-icons{
             text-align: center;
-            word-spacing: 1em;
             margin-bottom: 4em;
-    
         }
+
         .footer-icons li{
             display: inline;
-        
         }
-
-
     }
 }

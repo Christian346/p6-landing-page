@@ -6,11 +6,15 @@
 }
 
 body {
-  margin: 0 auto;
-  max-width: 768px;
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
   font-family: 'Fraunces', serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 780px;
+  background-color: none;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'header header header header' 'uppersec uppersec egg egg ' 'redcup redcup  uppersec2 uppersec2' 'cherry  cherry oranges oranges' 'midsec midsec midsec midsec' 'firstimg secondimg thirdimg fourimg' 'footer footer footer footer';
@@ -21,14 +25,13 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: header;
-  background-color: none;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-image: url(../../images/desktop/image-header.jpg);
   background-size: cover;
-  background-position: 20px 0px;
+  background-position: -40px 0px;
 }
 
 .main-header .first-h3 {
@@ -77,7 +80,7 @@ body {
   background-color: white;
   font-family: 'Fraunces', sans-serif;
   color: black;
-  width: 75px;
+  width: 85px;
   padding: 10px;
   border-radius: 30px;
   text-align: center;
@@ -93,10 +96,10 @@ body {
 }
 
 .main-header .arrow-down {
-  width: 20px;
+  width: 30px;
   position: relative;
-  top: 4em;
-  right: 6.3em;
+  top: -14em;
+  right: -21em;
 }
 
 .main-header .menu-btn {
@@ -109,13 +112,13 @@ body {
   -ms-grid-column-span: 2;
   grid-area: uppersec;
   background-color: white;
-  margin-left: 3em;
 }
 
 .area-1-header {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 2em;
+  margin-left: 1em;
 }
 
 .area-1-para {
@@ -124,6 +127,7 @@ body {
   line-height: 2em;
   color: #a7abae;
   margin-top: 3em;
+  margin-left: 3em;
 }
 
 .area-1-a {
@@ -132,6 +136,7 @@ body {
   text-decoration: none;
   color: #5a636c;
   font-weight: bold;
+  margin-left: 3em;
 }
 
 .area-2 {
@@ -163,7 +168,6 @@ body {
   -ms-grid-column-span: 2;
   grid-area: uppersec2;
   background-color: white;
-  margin-left: 3em;
 }
 
 .area-5 {
@@ -277,7 +281,6 @@ body {
   background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
   background-size: cover;
   height: 300px;
-  width: 300px;
 }
 
 .lower-img-2 {
@@ -343,8 +346,12 @@ body {
   display: inline;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 376px) {
   body {
+    margin: 0;
+    background-color: red;
+  }
+  .container {
         grid-template-areas: 'header header' 'egg  egg' 'uppersec uppersec' 'redcup redcup' 'uppersec2 uppersec2' 'cherry cherry' 'oranges oranges' 'midsec midsec' 'firstimg secondimg' 'thirdimg fourimg' 'footer footer';
   }
   .main-header {
@@ -353,8 +360,9 @@ body {
     -ms-grid-column-span: 2;
     grid-area: header;
     height: 670px;
-    background-size: 195% 100%;
-    background-position: -245px 0px;
+    width: 103vw;
+    background-size: 200% 100%;
+    background-position: -200px 0px;
     background-repeat: no-repeat;
   }
   .main-header .first-h3 {
@@ -371,6 +379,15 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .main-header .triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 47px solid white;
+    border-left: 47px solid transparent;
+    position: relative;
+    top: 6em;
+    right: 2.61em;
+  }
   .main-header .main-nav-li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -384,10 +401,10 @@ body {
             align-items: center;
     font-size: 2rem;
     margin-top: 2.5em;
-    margin-left: -3.75em;
+    margin-left: -4.5em;
     background-color: white;
     height: 400px;
-    width: 122.3%;
+    width: 146%;
     position: relative;
     z-index: 1;
   }
@@ -408,11 +425,11 @@ body {
   .main-header .top-h1 {
     margin: 0 auto;
     margin-top: -14em;
-    margin-left: -4em;
+    margin-left: -6em;
     font-size: 2rem;
     text-align: center;
     line-height: 50px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
   }
   .main-header .arrow-down {
     width: 40px;
@@ -429,20 +446,10 @@ body {
             justify-content: flex-end;
   }
   .main-header .menu-btn {
-    width: 42px;
+    width: 35px;
     display: block;
     margin-top: 0.9em;
-    margin-right: 0.1em;
     font-size: 3rem;
-  }
-  .main-header .triangle {
-    width: 0;
-    height: 0;
-    border-bottom: 47px solid white;
-    border-left: 47px solid transparent;
-    position: relative;
-    top: 6em;
-    right: 2.61em;
   }
   .area-1 {
     -ms-grid-row: 3;
@@ -450,16 +457,19 @@ body {
     -ms-grid-column-span: 2;
     grid-area: uppersec;
     margin: 0 auto;
+    margin-left: 0em;
+    width: 103vw;
   }
   .area-1-header {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
     margin-top: 2em;
+    margin-left: 0em;
   }
   .area-1-para {
     font-family: "Barlow",'seriff';
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 1em;
     line-height: 1.5em;
     color: #a7abae;
@@ -474,34 +484,39 @@ body {
     text-decoration: none;
     color: #5a636c;
     font-weight: bold;
+    margin-left: 0em;
   }
   .area-2 {
+    width: 103vw;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: egg;
     background-color: blue;
     background-image: url(../../images/desktop/image-transform.jpg);
-    background-position: -50px 0px;
+    background-position: -100px 0px;
     background-size: cover;
     height: 500px;
   }
   .area-3 {
+    width: 103vw;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: redcup;
     background-image: url(../../images/desktop/image-stand-out.jpg);
     background-size: cover;
-    background-position: -35px 0px;
+    background-position: -100px 0px;
     height: 500px;
   }
   .area-4 {
+    width: 103vw;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: uppersec2;
     margin: 0 auto;
+    margin-left: 0em;
   }
   .area-5-h {
     font-size: 2rem;
@@ -509,15 +524,16 @@ body {
     margin-top: 15em;
   }
   .area-5-p {
-    width: 500px;
-    font-size: 1.35rem;
+    width: 300px;
+    font-size: 1rem;
   }
   .graphic-d {
     height: 400px;
     background-size: cover;
-    background-position: -150px 0px;
+    background-position: -200px 0px;
   }
   .area-5 {
+    width: 103vw;
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -529,9 +545,10 @@ body {
     background-image: url(../../images/desktop/image-photography.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -150px 0px;
+    background-position: -220px 0px;
   }
   .area-6 {
+    width: 103vw;
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -539,6 +556,7 @@ body {
     height: 700px;
   }
   .client-testimonials {
+    width: 103vw;
     -ms-grid-row: 8;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -584,34 +602,35 @@ body {
     font-size: 1.2rem;
   }
   .lower-img-1 {
+    width: 23vw;
     -ms-grid-row: 9;
     -ms-grid-column: 1;
     grid-area: firstimg;
-    background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
-    background-size: cover;
-    height: 300px;
-    width: 300px;
   }
   .lower-img-2 {
+    width: 23vw;
     -ms-grid-row: 9;
     -ms-grid-column: 2;
     grid-area: secondimg;
   }
   .lower-img-3 {
+    width: 23vw;
     -ms-grid-row: 10;
     -ms-grid-column: 1;
     grid-area: thirdimg;
   }
   .lower-img-4 {
+    width: 2vw;
     -ms-grid-row: 10;
     -ms-grid-column: 2;
     grid-area: fourimg;
   }
   .img-2 {
-    height: 311px;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
   .main-footer {
+    width: 103vw;
     background-color: #458c7e;
     -ms-grid-row: 11;
     -ms-grid-column: 1;
@@ -629,7 +648,7 @@ body {
   }
   .main-footer .footer-list {
     text-align: center;
-    word-spacing: 5em;
+    word-spacing: 2em;
     margin-bottom: 4em;
     font-family: "Barlow", "Seriff";
     color: #25564b;
@@ -639,7 +658,6 @@ body {
   }
   .main-footer .footer-icons {
     text-align: center;
-    word-spacing: 1em;
     margin-bottom: 4em;
   }
   .main-footer .footer-icons li {
