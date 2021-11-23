@@ -358,37 +358,43 @@ body{
       flex-direction: column;
     }
 
-    .triangle{
-        width: 0;
-        height: 0;
-        border-bottom: 47px solid $White;
-        border-left: 47px solid transparent;
-        margin-top:3.5em;
-        margin-left: 8.64em;
-
-        //make it invisible
-       // visibility: hidden;
-      
-      }
+    
 
     .main-nav-li{
         
        //display when clicked has to placed there
        //visibility: hidden;
-
+        display: flex;
         flex-direction: column;
         justify-content:space-evenly;
         align-items: center;
         font-size: 1.3rem;   
-        margin-top:-0.1em;
+        margin-top:5em;
         margin-left:-7em;
         background-color:$White;
         height: 300px; 
-        width:138.8%;
+        width:140%;
         position: relative;// needs it for element not to crash with each other
         z-index: 1;
       
     }
+    .triangle{
+        width: 0;
+        height: 0;
+        border-bottom: 47px solid $White;
+        border-left: 47px solid transparent;
+      
+        //make it invisible
+       // visibility: hidden;
+      
+      }
+      .triangle-base{
+          display: flex;
+          height: 47px;
+          width: 100%;
+          justify-content: flex-end;
+         margin-top:-3.4em;
+      }
    
     
 
