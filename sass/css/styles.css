@@ -346,7 +346,7 @@ body {
   display: inline;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 420px) {
   body {
     margin: 0;
     background-color: red;
@@ -404,7 +404,7 @@ body {
     margin-left: -4.5em;
     background-color: white;
     height: 400px;
-    width: 146%;
+    width: 138.8%;
     position: relative;
     z-index: 1;
   }

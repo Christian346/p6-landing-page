@@ -313,7 +313,7 @@ body{
     }
 }
 
-@media screen and (max-width:376px) {
+@media screen and (max-width:420px) {
     //new grid template and resized elements 
 
     body{
@@ -384,7 +384,7 @@ body{
         margin-left:-4.5em;
         background-color:$White;
         height: 400px; 
-        width:146%;
+        width:138.8%;
         position: relative;// needs it for element not to crash with each other
         z-index: 1;
       
