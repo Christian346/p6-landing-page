@@ -77,13 +77,13 @@ body {
 }
 
 .main-header .main-nav-li li:hover {
-  background-color: white;
+  background-color: skyblue;
   font-family: 'Fraunces', sans-serif;
-  color: black;
   width: 85px;
   padding: 10px;
   border-radius: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 .main-header .top-h1 {
@@ -137,6 +137,22 @@ body {
   color: #5a636c;
   font-weight: bold;
   margin-left: 3em;
+}
+
+.area-1-a:hover {
+  border-radius: 10px;
+  height: 7px;
+  width: 128px;
+  -webkit-box-shadow: 0 13px 0 0 #fad400;
+          box-shadow: 0 13px 0 0 #fad400;
+}
+
+.area-1-a1:hover {
+  border-radius: 10px;
+  height: 7px;
+  width: 128px;
+  -webkit-box-shadow: 0 13px 0 0 #fe7867;
+          box-shadow: 0 13px 0 0 #fe7867;
 }
 
 .area-2 {
@@ -336,6 +352,11 @@ body {
   display: inline;
 }
 
+.main-footer .footer-list li:hover {
+  color: white;
+  cursor: pointer;
+}
+
 .main-footer .footer-icons {
   text-align: center;
   word-spacing: 1em;
@@ -346,10 +367,15 @@ body {
   display: inline;
 }
 
+.main-footer .footer-icons li:hover {
+  color: white;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 420px) {
   body {
     margin: 0;
-    background-color: red;
+    background-color: none;
   }
   .container {
         grid-template-areas: 'header header' 'egg  egg' 'uppersec uppersec' 'redcup redcup' 'uppersec2 uppersec2' 'cherry cherry' 'oranges oranges' 'midsec midsec' 'firstimg secondimg' 'thirdimg fourimg' 'footer footer';
@@ -380,6 +406,7 @@ body {
             flex-direction: column;
   }
   .main-header .main-nav-li {
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -408,6 +435,7 @@ body {
     border-bottom: 47px solid white;
     border-left: 47px solid transparent;
     margin-top: 0.6em;
+    visibility: hidden;
   }
   .main-header .triangle-base {
     margin-left: -3em;
@@ -467,6 +495,9 @@ body {
     margin-right: 1em;
     font-size: 3rem;
   }
+  .main-header .show {
+    visibility: visible;
+  }
   .area-1 {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -477,11 +508,12 @@ body {
     width: 103vw;
   }
   .area-1-header {
+    width: 80%;
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 2em;
-    margin-left: 0em;
+    margin: 0 auto;
+    margin-top: 1.5em;
   }
   .area-1-para {
     font-family: "Barlow",'seriff';
@@ -497,7 +529,6 @@ body {
     text-align: center;
     margin-top: 2em;
     margin-bottom: 4em;
-    text-decoration: none;
     color: #5a636c;
     font-weight: bold;
     margin-left: 0em;
@@ -540,8 +571,9 @@ body {
     margin-top: 15em;
   }
   .area-5-p {
-    width: 300px;
-    font-size: 1rem;
+    width: 400px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
   .graphic-d {
     height: 400px;
@@ -580,6 +612,7 @@ body {
     text-align: center;
   }
   .client-testimonials .client-h {
+    font-size: 1rem;
     word-spacing: 0.9em;
     letter-spacing: 0.4em;
     color: #5a636c;
@@ -606,7 +639,7 @@ body {
   .client-testimonials .people .para {
     margin: 0 auto;
     width: 80%;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin-bottom: 2em;
     line-height: 1.5em;
   }
@@ -615,7 +648,7 @@ body {
   }
   .client-testimonials .position {
     margin-bottom: 3em;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .lower-img-1 {
     width: 23vw;
@@ -664,7 +697,7 @@ body {
   }
   .main-footer .footer-list {
     text-align: center;
-    word-spacing: 2em;
+    word-spacing: 4em;
     margin-bottom: 4em;
     font-family: "Barlow", "Seriff";
     color: #25564b;
@@ -678,6 +711,7 @@ body {
   }
   .main-footer .footer-icons li {
     display: inline;
+    color: #25564b;
   }
 }
 /*# sourceMappingURL=styles.css.map */
