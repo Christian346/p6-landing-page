@@ -384,9 +384,8 @@ body {
     height: 0;
     border-bottom: 47px solid white;
     border-left: 47px solid transparent;
-    position: relative;
-    top: 6em;
-    right: 2.61em;
+    margin-top: 3.5em;
+    margin-left: 8.64em;
   }
   .main-header .main-nav-li {
     -webkit-box-orient: vertical;
@@ -399,11 +398,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 2rem;
-    margin-top: 2.5em;
-    margin-left: -4.5em;
+    font-size: 1.3rem;
+    margin-top: -0.1em;
+    margin-left: -7em;
     background-color: white;
-    height: 400px;
+    height: 300px;
     width: 138.8%;
     position: relative;
     z-index: 1;
@@ -411,7 +410,7 @@ body {
   .main-header .main-nav-li li {
     color: #a7abae;
     margin: 0 auto;
-    padding: 0.7em;
+    padding: 0.2em;
   }
   .main-header .main-nav-li li:hover {
     background-color: #fad400;
@@ -424,7 +423,7 @@ body {
   }
   .main-header .top-h1 {
     margin: 0 auto;
-    margin-top: -14em;
+    margin-top: -11em;
     margin-left: -6em;
     font-size: 2rem;
     text-align: center;
@@ -449,6 +448,7 @@ body {
     width: 35px;
     display: block;
     margin-top: 0.9em;
+    margin-right: 1em;
     font-size: 3rem;
   }
   .area-1 {
