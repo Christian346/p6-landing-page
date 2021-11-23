@@ -27,7 +27,7 @@ body{
  
 }
 .container{
-  margin:0 auto;
+ // margin:0 auto;
  
    max-width: 780px;
     background-color:none;
@@ -231,6 +231,7 @@ body{
     .client-h{
         margin-top: 6em;
         margin-bottom: 3em;
+        color: $Very-dark-grayish-blue;
     }
     .img-people{
         width:60px;
@@ -249,6 +250,7 @@ body{
         color:$Dark-grayish-blue;
         font-family: "Barlow", "Seriff";
         margin-bottom:4em ;
+        line-height: 1.6em;
     }
 
     .user{
@@ -594,7 +596,7 @@ body{
             font-size: 1rem;
             word-spacing: 0.9em;
             letter-spacing: 0.4em;
-            color: $Very-dark-grayish-blue;
+         
         }
 
         .img-people{
