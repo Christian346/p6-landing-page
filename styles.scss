@@ -148,12 +148,14 @@ body{
     
     }
     .area-1-a:hover{
+       
         border-radius: 10px;
         height: 7px;
         width: 128px;
         box-shadow: 0 13px 0 0 $Yellow;
     }
     .area-1-a1:hover{
+        
         border-radius: 10px;
         height: 7px;
         width: 128px;
@@ -519,12 +521,32 @@ body{
     .area-1-a{
      display: block;
      text-align: center;
-     margin-top: 2em;
-     margin-bottom: 4em;
      color: $Very-dark-grayish-blue;
      font-weight:bold;
-     margin-left: 0em;
+     margin:0 auto;
+     margin-top: 2em;
+     margin-bottom: 4em;
      
+     
+    }
+    .area-1-a:hover{
+       margin-left: 0 auto;
+       margin-top: 2em;
+       margin-bottom: 4em;
+       border-radius: 10px;
+       height: 7px;
+       width: 128px;
+       box-shadow: 0 13px 0 0 $Yellow;
+      
+    }
+    .area-1-a1:hover{
+        margin-left: 0 auto;
+        margin-top: 2em;
+        margin-bottom: 4em;
+        border-radius: 10px;
+        height: 7px;
+        width: 128px;
+        box-shadow: 0 13px 0 0 $Soft-red;
     }
 
     .area-2{

@@ -533,11 +533,31 @@ body {
   .area-1-a {
     display: block;
     text-align: center;
-    margin-top: 2em;
-    margin-bottom: 4em;
     color: #5a636c;
     font-weight: bold;
-    margin-left: 0em;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+  .area-1-a:hover {
+    margin-left: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    border-radius: 10px;
+    height: 7px;
+    width: 128px;
+    -webkit-box-shadow: 0 13px 0 0 #fad400;
+            box-shadow: 0 13px 0 0 #fad400;
+  }
+  .area-1-a1:hover {
+    margin-left: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    border-radius: 10px;
+    height: 7px;
+    width: 128px;
+    -webkit-box-shadow: 0 13px 0 0 #fe7867;
+            box-shadow: 0 13px 0 0 #fe7867;
   }
   .area-2 {
     width: 108vw;
