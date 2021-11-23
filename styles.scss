@@ -227,6 +227,7 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin:0 auto;
 
     .client-h{
         margin-top: 6em;
@@ -251,6 +252,8 @@ body{
         font-family: "Barlow", "Seriff";
         margin-bottom:4em ;
         line-height: 1.6em;
+        font-size:0.85rem;
+        width:280px;
     }
 
     .user{
