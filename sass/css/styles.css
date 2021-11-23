@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 780px;
+  margin: 0 auto;
   background-color: none;
   display: -ms-grid;
   display: grid;
@@ -196,8 +196,8 @@ body {
   height: 400px;
   background-image: url(../../images/desktop/image-graphic-design.jpg);
   background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: -15px 0px;
+  background-size: cover;
+  background-position: 0px 0px;
 }
 
 .area-5-h {
@@ -227,8 +227,8 @@ body {
   height: 400px;
   background-image: url(../../images/desktop/image-photography.jpg);
   background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: -15px 0px;
+  background-size: cover;
+  background-position: 0px 0px;
 }
 
 .client-testimonials {
@@ -301,6 +301,7 @@ body {
   background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
   background-size: cover;
   height: 300px;
+  width: 300px;
 }
 
 .lower-img-2 {
@@ -322,8 +323,8 @@ body {
 }
 
 .img-2 {
-  height: 300px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .main-footer {
