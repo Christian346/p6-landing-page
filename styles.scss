@@ -345,6 +345,7 @@ body{
     body{
         margin:0;
         background-color:none;
+        width: 100%;
        
     }
     .container{
@@ -368,7 +369,7 @@ body{
 .main-header{
     grid-area:header;
     height: 670px;
-    width: 103vw;
+    width: 108vw;
     background-size: 200% 100%;
     background-position: -200px 0px;
     background-repeat: no-repeat;
@@ -493,7 +494,7 @@ body{
         grid-area:uppersec;
         margin: 0 auto;
         margin-left: 0em;
-        width: 103vw;
+        width: 108vw;
     }
 
     .area-1-header{
@@ -527,7 +528,7 @@ body{
     }
 
     .area-2{
-        width: 103vw;
+        width: 108vw;
         grid-area:egg;
         background-color: blue;
         background-image: url(../../images/desktop/image-transform.jpg);
@@ -536,7 +537,7 @@ body{
         height: 500px; 
     }
     .area-3{
-        width: 103vw;
+        width: 108vw;
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
@@ -545,7 +546,7 @@ body{
     }
 
     .area-4{
-        width: 103vw;
+        width: 108vw;
       grid-area:uppersec2;
       margin: 0 auto;
       margin-left: 0em;
@@ -570,7 +571,7 @@ body{
       }
 
     .area-5{
-        width: 103vw;
+        width: 108vw;
         grid-area:cherry;
         height: 700px;  
     }
@@ -584,13 +585,13 @@ body{
       }
 
     .area-6{
-        width: 103vw;
+        width: 108vw;
         grid-area: oranges;
         height: 700px;
     }
 
     .client-testimonials{
-        width: 103vw;
+        width: 108vw;
         grid-area:midsec;
         text-align: center;
 
@@ -658,7 +659,7 @@ body{
     }
 
     .main-footer{
-        width: 103vw;
+        width: 108vw;
         background-color:$Dark-moderate-cyan;
         grid-area:footer;
     
