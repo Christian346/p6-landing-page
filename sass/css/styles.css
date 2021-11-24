@@ -479,20 +479,26 @@ body {
     border-radius: 35px;
     text-align: center;
   }
+  .main-header .top-h1-pos {
+    margin-left: -3em;
+  }
   .main-header .top-h1 {
+    background-color: none;
     margin: 0 auto;
-    margin-top: -11em;
-    margin-left: -6em;
-    font-size: 2rem;
+    margin-top: -21em;
+    position: relative;
+    right: 3.5em;
+    font-size: 1rem;
     text-align: center;
     line-height: 50px;
     letter-spacing: 10px;
   }
   .main-header .arrow-down {
+    display: block;
     width: 40px;
     margin: 0 auto;
     top: 3em;
-    left: 0.5em;
+    left: -3em;
   }
   .main-header .menu-pos {
     display: -webkit-box;

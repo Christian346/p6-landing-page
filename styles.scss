@@ -434,12 +434,12 @@ body{
       }
       .triangle-base {
         margin-left:-3em;
-          background-color:none;
-          display: flex;
-          height:20px;
-          width: 140%;
-          margin-left:-8.1em;
-          justify-content: flex-end;
+        background-color:none;
+        display: flex;
+        height:20px;
+        width: 140%;
+        margin-left:-8.1em;
+        justify-content: flex-end;
          margin-top:1em;
       }
    
@@ -454,7 +454,7 @@ body{
     }
     
     .main-nav-li li:hover{
-     
+
         background-color:$Yellow;
         font-family:'Fraunces', sans-serif; 
         color:black;
@@ -462,17 +462,18 @@ body{
         padding: 20px;
         border-radius: 35px;
         text-align: center;
-
- 
     }
-
+   .top-h1-pos{
+    margin-left:-3em;
+   }
 
     .top-h1{
-        
+        background-color:none;
         margin:0 auto;
-        margin-top: -11em;
-        margin-left:-6em;
-        font-size: 2rem;
+        margin-top: -21em;
+        position: relative;
+        right:3.5em;
+        font-size: 1rem;
         text-align: center;
         line-height:50px;
         letter-spacing: 10px;
@@ -480,11 +481,12 @@ body{
     }
    
     .arrow-down{
+        display: block;
         width:40px;
         margin: 0 auto;
         top:3em;
-        left:0.5em;
-        
+        //margin-left:-2em;
+        left:-3em;  
     }
     //button menu for small devices
      .menu-pos{
