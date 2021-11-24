@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   background-color: none;
   display: -ms-grid;
   display: grid;
@@ -394,6 +393,7 @@ body {
   }
   .container {
         grid-template-areas: 'header header' 'egg  egg' 'uppersec uppersec' 'redcup redcup' 'uppersec2 uppersec2' 'cherry cherry' 'oranges oranges' 'midsec midsec' 'firstimg secondimg' 'thirdimg fourimg' 'footer footer';
+    width: 100%;
   }
   .main-header {
     -ms-grid-row: 1;
@@ -401,7 +401,7 @@ body {
     -ms-grid-column-span: 2;
     grid-area: header;
     height: 670px;
-    width: 108vw;
+    width: 100vw;
     background-size: 200% 100%;
     background-position: 50% 0px;
   }
@@ -519,7 +519,7 @@ body {
     grid-area: uppersec;
     margin: 0 auto;
     margin-left: 0em;
-    width: 108vw;
+    width: 100vw;
   }
   .area-1-header {
     width: 80%;
@@ -568,7 +568,7 @@ body {
             box-shadow: 0 13px 0 0 #fe7867;
   }
   .area-2 {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -580,7 +580,7 @@ body {
     height: 500px;
   }
   .area-3 {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -591,7 +591,7 @@ body {
     height: 500px;
   }
   .area-4 {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -615,7 +615,7 @@ body {
     background-position: -200px 0px;
   }
   .area-5 {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -630,7 +630,7 @@ body {
     background-position: -220px 0px;
   }
   .area-6 {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -638,7 +638,7 @@ body {
     height: 700px;
   }
   .client-testimonials {
-    width: 108vw;
+    width: 100vw;
     -ms-grid-row: 8;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -712,7 +712,7 @@ body {
     width: 100%;
   }
   .main-footer {
-    width: 108vw;
+    width: 100vw;
     background-color: #458c7e;
     -ms-grid-row: 11;
     -ms-grid-column: 1;
