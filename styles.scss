@@ -47,12 +47,14 @@ body{
 
 .main-header{
     grid-area:header;
+   
     width: 100%;
     display:flex;
     background-image: url(../../images/desktop/image-header.jpg);
-    background-size: cover;
-    background-position: -40px 0px;
-
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 100%;
+    //background-color:red;
     .first-h3{
        font-family: 'Barlow', Serif;
         height: 50px;
@@ -65,18 +67,19 @@ body{
       display: flex;
       width:100%;
       flex-direction: column;
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position: -80px 0px;
     }
-
+     
+    
     .main-nav-li{
-        display: flex;
+ 
+        height:40px;
+        width:97%;
+        display:flex;
         font-family: 'Barlow', serif;
         list-style: none;
         margin-bottom: 2em;
         justify-content: flex-end;
-        margin-right: 1em;
+        margin-right:1em;
         margin-top: 1em;
         font-size: 1rem;      
     }
@@ -97,9 +100,10 @@ body{
     }
 
     .top-h1{
-        margin-left: 5em;
-        margin-top: 1em;
-        margin-bottom: 10em;
+        
+       // margin-left: 5em;
+       // margin-top: 1em;
+        margin-bottom: 7em;
         color:$White;
         letter-spacing: 3px;
         font-size: 2.25rem;  
@@ -108,8 +112,12 @@ body{
     .arrow-down{
         width:30px;
         position: relative;
-        top:-14em;
-        right:-21em;   
+        bottom:12em;
+        left:8em;   
+    }
+
+    .top-h1-pos{
+        margin: 0 auto;
     }
     
     .menu-btn{
@@ -123,13 +131,15 @@ body{
         
   
     }
-    .area-1-header{      
+    .area-1-header{   
+        
         font-size: 2.5rem;
         font-weight: bold;
         margin-top: 2em; 
         margin-left: 1em;
     }
     .area-1-para{
+        
         font-family: "Barlow",'seriff';
         font-size: 1rem;
         line-height: 2em;
@@ -139,25 +149,27 @@ body{
     }
     .area-1-a{
      display: block;
-     margin-top: 3em;
+     margin-top: 6em;
      text-decoration: none;
      color: $Very-dark-grayish-blue;
      font-weight:bold;
      margin-left: 3em;
+     margin-bottom: 6em;
+     height:10px;
 
     
     }
     .area-1-a:hover{
        
         border-radius: 10px;
-        height: 7px;
+        height: 10px;
         width: 128px;
         box-shadow: 0 13px 0 0 $Yellow;
     }
     .area-1-a1:hover{
         
         border-radius: 10px;
-        height: 7px;
+        height: 10px;
         width: 128px;
         box-shadow: 0 13px 0 0 $Soft-red;
     }
@@ -168,15 +180,17 @@ body{
         background-image: url(../../images/desktop/image-transform.jpg);
         background-position: -50px 0px;
         background-size: cover;
-        height: 500px;   
+        height: auto;  
+        width:100%; 
     }
 
     .area-3{
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
-        background-position: -50px 0px;
-        height: 500px;
+        background-position: 50% 0px;
+        height: auto;  
+        width:100%; 
     }
 
     .area-4{
@@ -189,7 +203,8 @@ body{
         grid-area:cherry; 
     }
     .graphic-d{
-        height: 400px;
+        height: auto;  
+        width:100%; 
         background-image: url(../../images/desktop/image-graphic-design.jpg);
         background-repeat:no-repeat;
         background-size:cover;
@@ -205,6 +220,7 @@ body{
           margin:0 auto;
           width: 300px;
           margin-top:1em;
+          margin-bottom: 2em;
           text-align: center;
           font-size: 1rem;
           font-family: "Barlow",'seriff';
@@ -215,7 +231,8 @@ body{
         grid-area: oranges;
     }
     .photography{ 
-        height: 400px;
+        height: auto;  
+        width:100%; 
           background-image: url(../../images/desktop/image-photography.jpg);
           background-repeat:no-repeat;
           background-size:cover;
@@ -341,7 +358,7 @@ body{
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:450px) {
     //new grid template and resized elements 
 
     body{
@@ -373,8 +390,8 @@ body{
     height: 670px;
     width: 108vw;
     background-size: 200% 100%;
-    background-position: -200px 0px;
-    background-repeat: no-repeat;
+    background-position: 50% 0px;
+   // background-repeat: no-repeat;
 
     .first-h3{
         font-size: 2rem;
@@ -467,7 +484,7 @@ body{
         width:40px;
         margin: 0 auto;
         top:3em;
-        right:5em;
+        left:0.5em;
         
     }
     //button menu for small devices
