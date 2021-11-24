@@ -391,8 +391,10 @@ body{
     background-size: 200% 100%;
     background-position: 50% 0px;
    // background-repeat: no-repeat;
+   
 
     .first-h3{
+      
         font-size: 2rem;
         font-weight:800;
     }
@@ -401,6 +403,7 @@ body{
       display: flex; 
       width:100%;
       flex-direction: column;
+      
     }
 
 
@@ -413,7 +416,7 @@ body{
         justify-content:space-evenly;
         align-items: center;
         font-size: 1.3rem;   
-        margin-top:1.8em;
+        margin-top:1.5em;
         margin-left:-7em;
         background-color:$White;
         height: 300px; 
@@ -464,19 +467,22 @@ body{
         text-align: center;
     }
    .top-h1-pos{
-    margin-left:-3em;
+      
+       margin-top: 18em;
+      margin-left:-9.8em;
    }
 
     .top-h1{
         background-color:none;
-        margin:0 auto;
+       // margin:0 auto;
         margin-top: -21em;
         position: relative;
-        right:3.5em;
-        font-size: 1rem;
+        //right:10em;
+        font-size: 2rem;
+        width: 100%;
         text-align: center;
-        line-height:50px;
-        letter-spacing: 10px;
+        line-height:40px;
+        letter-spacing: 5px;
         
     }
    
@@ -484,9 +490,9 @@ body{
         display: block;
         width:40px;
         margin: 0 auto;
-        top:3em;
+        top:-10em;
         //margin-left:-2em;
-        left:-3em;  
+        left:-0.3em;  
     }
     //button menu for small devices
      .menu-pos{
