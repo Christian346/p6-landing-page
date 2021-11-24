@@ -579,7 +579,7 @@ body{
         grid-area:redcup;
         background-image: url(../../images/desktop/image-stand-out.jpg);
         background-size: cover;
-        background-position: -100px 0px;
+       background-position: 50% 0px;
         height: 500px;
     }
 
@@ -597,8 +597,8 @@ body{
     }
 
     .area-5-p{ 
-        width: 400px;
-        font-size: 1.1rem;  
+        width: 80%;
+        font-size: 1rem;  
         line-height: 1.5rem;
     }
 
