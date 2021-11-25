@@ -68,17 +68,23 @@ body{
       width:100%;
       flex-direction: column;
     }
-     
+     .main-nav-pos{
+        
+         width: 95%;
+         background-color:none;
+     }
     
     .main-nav-li{
- 
+     display: flex;
+     justify-content:flex-end;
+       //margin:0 auto;
+       background-color: none;
         height:40px;
-        width:97%;
+        //width:60%;
         display:flex;
         font-family: 'Barlow', serif;
         list-style: none;
         margin-bottom: 2em;
-        justify-content: flex-end;
         margin-right:1em;
         margin-top: 1em;
         font-size: 1rem;      
@@ -86,7 +92,9 @@ body{
 
     .main-nav-li li{
         color:$White;
+          background-color:none;
         margin-left: 3em;
+        justify-content:flex-end;
     }
 
     .main-nav-li li:hover{
@@ -271,7 +279,7 @@ body{
         margin-bottom:4em ;
         line-height: 1.6em;
         font-size:0.85rem;
-        width:280px;
+        //width:280px;
     }
 
     .user{
@@ -410,6 +418,7 @@ body{
     .main-nav-li{
         
        //display when clicked has to placed there
+       
         visibility: hidden;
         display: flex;
         flex-direction: column;
@@ -420,7 +429,7 @@ body{
         margin-left:-7em;
         background-color:$White;
         height: 300px; 
-        width:140%;
+        width:147%;
         position: relative;// needs it for element not to crash with each other
         z-index: 1;
       
@@ -506,6 +515,7 @@ body{
         margin-top: 0.9em;
         margin-right:1em;
         font-size: 3rem;
+        cursor: pointer;
     }
     
 
@@ -526,7 +536,7 @@ body{
     .area-1-header{
         width:80%;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         font-weight: bold;
         margin:0 auto;
         margin-top: 1.5em;
@@ -534,7 +544,7 @@ body{
 
     .area-1-para{
         font-family: "Barlow",'seriff';
-        font-size: 1rem;
+        font-size: 1.15rem;
         margin:1em;
         line-height: 1.5em;
         color: $Grayish-blue;

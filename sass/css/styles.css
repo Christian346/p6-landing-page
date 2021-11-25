@@ -52,18 +52,24 @@ body {
           flex-direction: column;
 }
 
+.main-header .main-nav-pos {
+  width: 95%;
+  background-color: none;
+}
+
 .main-header .main-nav-li {
-  height: 40px;
-  width: 97%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: none;
+  height: 40px;
   display: flex;
   font-family: 'Barlow', serif;
   list-style: none;
   margin-bottom: 2em;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   margin-right: 1em;
   margin-top: 1em;
   font-size: 1rem;
@@ -71,7 +77,11 @@ body {
 
 .main-header .main-nav-li li {
   color: white;
+  background-color: none;
   margin-left: 3em;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .main-header .main-nav-li li:hover {
@@ -288,7 +298,6 @@ body {
   margin-bottom: 4em;
   line-height: 1.6em;
   font-size: 0.85rem;
-  width: 280px;
 }
 
 .client-testimonials .user {
@@ -439,7 +448,7 @@ body {
     margin-left: -7em;
     background-color: white;
     height: 300px;
-    width: 140%;
+    width: 147%;
     position: relative;
     z-index: 1;
   }
@@ -514,6 +523,7 @@ body {
     margin-top: 0.9em;
     margin-right: 1em;
     font-size: 3rem;
+    cursor: pointer;
   }
   .main-header .show {
     visibility: visible;
@@ -530,14 +540,14 @@ body {
   .area-1-header {
     width: 80%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: bold;
     margin: 0 auto;
     margin-top: 1.5em;
   }
   .area-1-para {
     font-family: "Barlow",'seriff';
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin: 1em;
     line-height: 1.5em;
     color: #a7abae;
