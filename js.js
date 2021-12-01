@@ -1,3 +1,4 @@
+
 var menubtn = document.querySelector('.menu-btn')
 var triangle = document.querySelector('.triangle')
 var menuphone = document.querySelector('.main-nav-li')
@@ -10,3 +11,4 @@ function show(){
     triangle.classList.toggle('show')
 
 }
+

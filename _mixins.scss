@@ -1,0 +1,41 @@
+@mixin reset-list{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+@mixin links{
+    border-radius: 10px;
+        height: 10px;
+        width: 100px;
+}
+@mixin areastextmargin{
+    background-color:$White;
+    margin: 15.5%;
+}
+@mixin flexcolumncenter{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+
+}
+@mixin footerstyle{
+    font-family:"Barlow", "Seriff";
+    color:$Dark-desaturated-cyan;
+    text-align: center;
+}
+
+@mixin flexflexendcenter{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+@mixin phonelinks{
+    display: block;
+     text-align: center;
+     color: $Very-dark-grayish-blue;
+     font-weight:bold;
+     margin:0 auto;
+     margin-top: 2em;
+     margin-bottom: 4em;
+     border-radius: 10px;
+}
