@@ -1,3 +1,16 @@
+//rederizer
+var title1=[,]
+var parag=[,]
+var links=[,]
+var title2=[,]
+var parag2=[,]
+var peoplepara=[,]
+var poeple=[,]
+var peoplepos=[,]
+
+
+
+
 
 var menubtn = document.querySelector('.menu-btn')
 var triangle = document.querySelector('.triangle')
