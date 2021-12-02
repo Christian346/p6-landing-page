@@ -502,7 +502,7 @@ body {
     margin-right: 10em;
     background-color: white;
     width: 91%;
-    height: 200px;
+    height: 250px;
     position: relative;
     z-index: 1;
   }
@@ -526,7 +526,7 @@ body {
   }
   .main-header .top-h1-pos {
     margin: 0 auto;
-    margin-top: -11em;
+    margin-top: -13.5em;
     width: 90%;
   }
   .main-header .top-h1 {
@@ -537,7 +537,7 @@ body {
   }
   .main-header .arrow-down {
     display: block;
-    width: 39px;
+    width: 34px;
     margin: 0 auto;
     left: -0.1em;
   }

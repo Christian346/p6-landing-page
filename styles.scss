@@ -385,7 +385,7 @@ body{
         margin-right:10em;
         background-color:$White;
         width:91%;
-        height: 200px;
+        height: 250px;
         position: relative;// needs it for element not to crash with each other
         z-index: 1;
     }
@@ -412,7 +412,7 @@ body{
     }
    .top-h1-pos{  
        margin:0 auto;
-       margin-top: -11em;
+       margin-top: -13.5em;
        width: 90%;   
    }
     .top-h1{
@@ -424,7 +424,7 @@ body{
    
     .arrow-down{
         display: block;
-        width:39px;
+        width:34px;
         margin: 0 auto;
         left:-0.1em;  
     }
