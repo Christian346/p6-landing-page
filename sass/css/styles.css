@@ -120,6 +120,7 @@ body {
 }
 
 .main-header .main-nav-li li a:hover {
+  display: block;
   background-color: white;
   color: #23303e;
   font-family: 'Fraunces', sans-serif;

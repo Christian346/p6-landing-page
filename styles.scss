@@ -84,6 +84,7 @@ body{
         font-family:'Fraunces', sans-serif;
     }
     .main-nav-li li a:hover{
+        display: block;
         background-color:$White;
         color:$Very-dark-desaturated-blue;
         font-family:'Fraunces', sans-serif; 
