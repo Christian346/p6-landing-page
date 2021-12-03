@@ -5,8 +5,8 @@
   @include reset-list;
 }
 body{
-    max-width:900px;
-    margin: 0 auto;
+   // max-width:900px;
+   // margin: 0 auto;
     font-size:18px;
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
@@ -30,9 +30,14 @@ body{
      height: 500px;
      width: 100%;
      display:flex;
+     background-color:$imageheadercolor;
      background-image: url(../../images/desktop/image-header.jpg);
-     background-size:100% 100%;
+     background-size:900px 100%;  
+     background-position: 50%;
      background-repeat: no-repeat;
+
+
+
     .main-nav{
         display: flex;
         width:100%;
@@ -168,8 +173,9 @@ body{
     .graphic-d{  
         background-image: url(../../images/desktop/image-graphic-design.jpg);
         background-size:cover;
+        
       }
-
+      
       .area-5-h{
           text-align: center;
           color:$Dark-desaturated-cyan;
@@ -262,7 +268,7 @@ body{
 
     .img-2{
        height:100%;
-       max-width:100%;
+       width:100%;
     }
 //
 .main-footer{
