@@ -119,6 +119,7 @@ body{
      }
 }
     .area-1{
+       
         grid-area:uppersec;
         @include areastextmargin;
     }
@@ -155,11 +156,14 @@ body{
     }
 
     .area-2{
-        grid-area:egg;   
+        grid-area:egg;  
+       
+        
     }
 
     .area-3{
         grid-area:redcup;
+      
     }
 
     .area-4{
@@ -169,12 +173,10 @@ body{
 
     .area-5{
         grid-area:cherry; 
-    }
-    .graphic-d{  
-        background-image: url(../../images/desktop/image-graphic-design.jpg);
-        background-size:cover;
+        background-color: green;
         
-      }
+    }
+    
       
       .area-5-h{
           text-align: center;
@@ -183,6 +185,7 @@ body{
       }
       .area-5-h-2{
           color:$Very-dark-desaturated-blue;
+         
       }
       .area-5-p{
           display: block;
@@ -195,19 +198,26 @@ body{
           line-height: 1.5em;
           font-family: "Barlow",'seriff';
           color:$Dark-moderate-cyan;
+
       }
       .area-5-p2{
           width:60%;
           color:$Very-dark-grayish-blue;
       }
+      
+      .text-w-img{
+          position: relative;
+          z-index:1;
+          width: 100%;
+          margin-top: -22em;
+         
+      }
 
     .area-6{
         grid-area: oranges;
+        width: 100%; 
     }
-    .photography{ 
-          background-image: url(../../images/desktop/image-photography.jpg);
-          background-size:cover;
-      }
+    
     
     .client-testimonials{
     grid-area:midsec;
@@ -333,6 +343,7 @@ body{
 .main-header{
     grid-area:header;
     background-image: url(../../images/mobile/image-header.jpg);
+    background-size:100%;
     
     .first-h3{
         width:100px;
@@ -506,6 +517,14 @@ body{
         font-size: 1rem;  
         line-height: 1.5rem;
     }
+    .text-w-img{
+    
+        position: relative;
+        z-index:3;
+        width: 100%;
+        margin-top:29em;
+       
+    }
 
     .graphic-d{
        background-image:url(../../images/mobile/image-graphic-design.jpg);
@@ -521,7 +540,9 @@ body{
           background-image: url(../../images/mobile/image-photography.jpg);
           background-size: 100% 100%;
       }
-
+   .img-hidden{
+       display: none;//hide image on smaller screen
+   }
     .area-6{
         grid-area: oranges;
         height: 700px;

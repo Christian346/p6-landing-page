@@ -231,11 +231,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: cherry;
-}
-
-.graphic-d {
-  background-image: url(../../images/desktop/image-graphic-design.jpg);
-  background-size: cover;
+  background-color: green;
 }
 
 .area-5-h {
@@ -266,16 +262,19 @@ body {
   color: #5a636c;
 }
 
+.text-w-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: -22em;
+}
+
 .area-6 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: oranges;
-}
-
-.photography {
-  background-image: url(../../images/desktop/image-photography.jpg);
-  background-size: cover;
+  width: 100%;
 }
 
 .client-testimonials {
@@ -432,6 +431,7 @@ body {
     -ms-grid-column-span: 2;
     grid-area: header;
     background-image: url(../../images/mobile/image-header.jpg);
+    background-size: 100%;
   }
   .main-header .first-h3 {
     width: 100px;
@@ -631,6 +631,12 @@ body {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+  .text-w-img {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin-top: 29em;
+  }
   .graphic-d {
     background-image: url(../../images/mobile/image-graphic-design.jpg);
     background-size: 100% 100%;
@@ -645,6 +651,9 @@ body {
   .photography {
     background-image: url(../../images/mobile/image-photography.jpg);
     background-size: 100% 100%;
+  }
+  .img-hidden {
+    display: none;
   }
   .area-6 {
     -ms-grid-row: 7;
